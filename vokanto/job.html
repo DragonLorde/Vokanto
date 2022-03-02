@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacanta</title>
+    <script src="https://unpkg.com/cookielib/src/cookie.min.js"></script>
+
+    <link rel="stylesheet" href="style/job/job.css">
+</head>
+<body>
+    <div class="menu">
+        <ol>
+            <li><button onclick="reslide('index.html')"></button></li>
+            <li><button onclick="reslide('profile.html')"></button></li>
+            <li><button onclick="reslide('job.html')"></button></li>
+        </ol>
+    </div>
+    <div class="menur m">
+        <div class="m__avatar">
+            <div class="swit">
+                <div class="orng">
+                    <img src="assets/icon/ding.svg" alt="">
+                </div>
+                <div>
+                    <img src="assets/icon/msg.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="m__vac">
+            <p>Новые подходящие стажировки</p>
+            <div class="m__col">
+                <div class="m__row">
+                    <a href="">
+                        <img src="assets/icon/profile.svg" alt="">
+                        <div class="m__vac-text">
+                            <p>Backend разработчик (PHP)</p>
+                            <span>WhiteBox</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="m__vac">
+            <button class="exit" onclick="exit()">Выйти</button>
+        </div>
+        <div class="m__chat m__switch-hide">
+            <div class="m__col">
+                <div class="m__row chat">
+                    <img src="assets/icon/profile.svg" alt="">
+                    <p>User 1</p>
+                    <img src="assets/icon/chat.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="m__msg m__switch-hide">
+            <div class="msg__bar">
+                <img src="assets/icon/arow.svg" alt="" class="back-arr">
+                <img src="assets/icon/profile.svg" alt="">
+                <p>User 1</p>
+            </div>
+            <div class="msg__msg">
+                <div class="msg__col">
+                    <div class="msg__row">
+                        <p>Здраствуйте, готовы пригласить вас на собеседование</p>
+                    </div>
+                    <div class="msg__row">
+                        <p>Здраствуйте, хорошо, готов в любое время </p>
+                    </div>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Напишите сообщение...">
+                    <div>
+                        <button></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="reslide ">
+        <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+    </div>
+    <div class="app">
+        <div class="wrapper">
+            <div class="wrap">
+                <header class="header">
+                    <div class="header__left">
+                        <h1>Vacanta</h1>
+                        <p id="count">7019 вакансий <span>по вашему запросу</span></p>
+                    </div>
+                    <div class="header__right">
+                        <div class="header__srch">
+                            <input type="text" placeholder="Поиск . . ." class="sr"> 
+                            <img src="assets/icon/serach.svg" alt="" class="srS">
+                        </div>
+                        <span>Возможно вам подойдут следующие стажировки</span>
+                        <div class="header__help">
+                            <a href="">php</a>
+                            <a href="">JS</a>
+                        </div>
+                    </div>
+                    <div class="header__filter">
+                        <img src="assets/icon/filter.svg" alt="">
+                    </div>
+                </header>
+                <div class="jobs">
+                    <div class="jobs__col">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/events/jobs.js"></script>
+    <script src="scripts/reslide.js"></script>
+    <script src="scripts/net/srch.js"></script>
+    <script src="scripts/net/job.js"></script>
+    <script src="scripts/net/menu.js"></script>
+
+</body>
+</html>

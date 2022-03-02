@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacanta</title>
+    <link rel="stylesheet" href="style/login/login.css">
+    <link rel="stylesheet" href="style/anim.css">
+
+    <script src="https://unpkg.com/cookielib/src/cookie.min.js"></script>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="reslide ">
+            <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+        </div>
+        <div>
+            <form action="" onsubmit="req(); return false;">
+                <h1>Vacanta</h1>
+                <input type="text" placeholder="Емайл" required name="email">
+                <input type="phone" placeholder="Телефон" required name="phone">
+                <input type="password" placeholder="Пароль" required name="pass">
+                <p>Кто вы</p>
+                <select name="type" id="">
+                    <option value="1">студент</option>
+                    <option value="2">Работадатель</option>
+                    <option value="3">Университет</option>
+                </select>
+                <button>Регистрация</button>
+            </form>
+        </div>
+    </div>
+    <script src="scripts/reslide.js"></script>
+    <script src="scripts/net/regist.js"></script>
+</body>
+</html>

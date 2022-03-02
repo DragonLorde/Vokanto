@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacanta</title>
+    <script src="https://unpkg.com/cookielib/src/cookie.min.js"></script>
+
+    <link rel="stylesheet" href="style/profile/profile.css">
+</head>
+<body>
+    <div class="reslide ">
+        <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+    </div>
+    <div class="menu">
+        <ol>
+            <li><button onclick="reslide('index.html')"></button></li>
+            <li><button onclick="reslide('profile.html')"></button></li>
+            <li><button onclick="reslide('job.html')"></button></li>
+        </ol>
+    </div>
+    <div class="menur m">
+        <div class="m__avatar">
+            <div class="swit">
+                <div class="orng">
+                    <img src="assets/icon/ding.svg" alt="">
+                </div>
+                <div>
+                    <img src="assets/icon/msg.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="m__vac">
+            <p>Новые подходящие стажировки</p>
+            <div class="m__col">
+                <div class="m__row">
+                    <a href="">
+                        <img src="assets/icon/profile.svg" alt="">
+                        <div class="m__vac-text">
+                            <p>Backend разработчик (PHP)</p>
+                            <span>WhiteBox</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="m__vac">
+            <button class="exit" onclick="exit()">Выйти</button>
+        </div>
+        <div class="m__chat m__switch-hide">
+            <div class="m__col">
+                <div class="m__row chat">
+                    <img src="assets/icon/profile.svg" alt="">
+                    <p>User 1</p>
+                    <img src="assets/icon/chat.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="m__msg m__switch-hide">
+            <div class="msg__bar">
+                <img src="assets/icon/arow.svg" alt="" class="back-arr">
+                <img src="assets/icon/profile.svg" alt="">
+                <p>User 1</p>
+            </div>
+            <div class="msg__msg">
+                <div class="msg__col">
+                    <div class="msg__row">
+                        <p>Здраствуйте, готовы пригласить вас на собеседование</p>
+                    </div>
+                    <div class="msg__row">
+                        <p>Здраствуйте, хорошо, готов в любое время </p>
+                    </div>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Напишите сообщение...">
+                    <div>
+                        <button></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="wrap">
+            <div class="stud ">
+               
+            </div>
+            <div class="empl hide__prof">
+                
+            </div>
+            <div class="comm">
+                <p>Коментарии</p>
+                <div class="comm__col">
+                    
+                </div>
+                <form action="" class="addcom" onsubmit="SendCom(); return false;">
+                    <input type="text" name="text">
+                    <div>
+                        <button></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/reslide.js"></script>
+    <script src="scripts/events/menu.js"></script>
+    <script src="scripts/net/prof.js"></script>
+    <script src="scripts/net/menu.js"></script>
+    <script src="scripts/events/jobs.js"></script>
+</body>
+</html>

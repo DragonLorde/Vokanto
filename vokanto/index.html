@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacanta</title>
+    <script src="https://unpkg.com/cookielib/src/cookie.min.js"></script>
+
+    <link rel="stylesheet" href="style/index/index.css">
+    <link rel="stylesheet" href="style/menu/menu.css">
+</head>
+<body>
+    <div class="reslide ">
+        <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+    </div>
+    <div class="menu">
+        <ol>
+            <li><button onclick="reslide('index.html')"></button></li>
+            <li><button onclick="reslide('profile.html')"></button></li>
+            <li><button onclick="reslide('job.html')"></button></li>
+        </ol>
+    </div>
+    <div class="menurgrelogin">
+        <div class="menurgrelogin__title">
+            <h1>Vacanta</h1>
+            <p>Сервис для поисков стажировки</p>
+        </div>
+        <div class="menurgrelogin__login">
+            <a href="regist.html">Регистрация</a>
+            <a href="login.html">Войти</a>
+        </div>
+        <div class="menurgrelogin__text">
+            <p>Поиск стажировок</p>
+            <p>Поиск стажировок в Тюмени <br> между большим количеством 
+                вакансий <br> в различных отраслях деятельности: от  <br>
+                сотрудников сферы обслуживания до <br> руководства крупных компаний.  <br>
+                Используйте нашу обширную <br> информационную базу — 
+                и вы быстро <br> найдете подходящую работ</p>
+        </div>
+    </div>
+    <div class="menur m m__switch-hide">
+        <div class="m__avatar">
+            <div class="swit">
+                <div class="orng">
+                    <img src="assets/icon/ding.svg" alt="">
+                </div>
+                <div>
+                    <img src="assets/icon/msg.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="m__vac">
+            <p>Новые подходящие стажировки</p>
+            <div class="m__col">
+                <div class="m__row">
+                    <a href="">
+                        <img src="assets/icon/profile.svg" alt="">
+                        <div class="m__vac-text">
+                            <p>Backend разработчик (PHP)</p>
+                            <span>WhiteBox</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="m__vac">
+            <button class="exit" onclick="exit()">Выйти</button>
+        </div>
+        <div class="m__chat m__switch-hide">
+            <div class="m__col">
+                <div class="m__row chat">
+                    <img src="assets/icon/profile.svg" alt="">
+                    <p>User 1</p>
+                    <img src="assets/icon/chat.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="m__msg m__switch-hide">
+            <div class="msg__bar">
+                <img src="assets/icon/arow.svg" alt="" class="back-arr">
+                <img src="assets/icon/profile.svg" alt="">
+                <p>User 1</p>
+            </div>
+            <div class="msg__msg">
+                <div class="msg__col">
+                    <div class="msg__row">
+                        <p>Здраствуйте, готовы пригласить вас на собеседование</p>
+                    </div>
+                    <div class="msg__row">
+                        <p>Здраствуйте, хорошо, готов в любое время </p>
+                    </div>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Напишите сообщение...">
+                    <div>
+                        <button></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+   <div class="app">
+    <div class="wrapper">
+        <div class="wrap">
+            <header class="header">
+                <input type="text" placeholder="Поиск . . ." class="sr"> 
+                <img src="assets/icon/serach.svg" alt="" class="srS">
+            </header>
+            <div class="info">
+                <div class="info__hist">
+                    <p>Истории</p>
+                    <div class="info__hist-col">
+                        <div class="info__hist-row">
+                            <p>Новая стажировка</p>
+                            <div class="info__hist-hide hist__hide">
+                                <div class="info__hist-back">
+                                    <div class="info__hist-wrap">
+                                        <p>Новая стажировка от коспании росатом</p>
+                                        <a href="">Перейти</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info__hist-row">
+                            <p>Новая стажировка</p>
+                            <div class="info__hist-hide hist__hide">
+                                <div class="info__hist-back">
+                                    <div class="info__hist-wrap">
+                                        <p>ЭЭЭ слышь</p>
+                                        <a href="">Перейти</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info__inst">
+                    <p>Возможно вам будет интересно</p>
+                    <div class="info__inst-col">
+                        <div class="info__inst-row">
+                            <a href="">Работа для прогера</a>
+                        </div>
+                        <div class="info__inst-row">
+                            <a href="">Работа для прогера</a>
+                        </div>
+                        <div class="info__inst-row">
+                            <a href="">Работа для прогера</a>
+                        </div>
+                        <div class="info__inst-row">
+                            <a href="">Работа для прогера</a>
+                        </div>
+                        <div class="info__inst-row">
+                            <a href="">Работа для прогера</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vac">
+                <div class="vac__wrap">
+                    <span>Последние вакансии</span>
+                    <div class="vac__day-col">
+                        <div class="vac__day-row">
+                            <a href="">
+                                <p>WhieBox</p>
+                                <p>PHP</p>
+                                <p>500000</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+   <script src="scripts/reslide.js"></script>
+   <script src="scripts/events/storys.js"></script>
+   <script src="scripts/index.js"></script>
+   <script src="scripts/events/menu.js"></script>
+   <script src="scripts/net/menu.js"></script>
+   <script src="scripts/net/srch.js"></script>
+</body>
+</html>
